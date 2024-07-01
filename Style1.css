@@ -1,0 +1,424 @@
+/* Variables */
+:root {
+  --primary: #006699;
+  --secondary: #000;
+  --text: #080808;
+  --bg: #fff;
+  --font: 'Montserrat', sans-serif;
+}
+
+/* Estilos generales */
+body {
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Efecto Parallax */
+.parallax {
+  background: url(Fondo.jpeg) no-repeat center/cover fixed;
+  height: 700px;
+}
+
+/* Encabezado */
+header {
+  background-color: rgba(253, 253, 253, 0.8);
+  padding: 30px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.header_logo_image {
+  max-height: 40px;
+}
+
+.separator {
+  width: 1px;
+  height: 50px;
+  background-color: var(--text);
+  margin-right: 5px;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+}
+
+nav li {
+  position: relative;
+  margin-left: 40px;
+}
+
+nav a {
+  font-weight: bold;
+  padding: 5px 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+  color: #ffffffc4;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  min-width: auto;
+  white-space: nowrap;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.281);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+}
+
+.dropdown-content a {
+  color: var(--text);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: max-content;
+}
+
+.content-container {
+  margin: 0 40px;
+}
+
+/* Sección principal */
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.98);
+  padding: 80px 0;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--secondary);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Pie de página */
+footer {
+  background-color: #e6e5e5;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+/* Estilos de videos */
+.video-container {
+  position: relative;
+  aspect-ratio: 16/9;
+  width: 100%; /* Hace que el video ocupe todo el ancho del contenedor principal */
+  max-width: 800px; /* Establece un ancho máximo para el video */
+  margin: 20px auto; /* Centra el video verticalmente y horizontalmente */
+  margin-top: 20px; /* Ajusta el valor según tus necesidades */  
+  margin-bottom: 20px; /* Agrega un margen inferior de 20 píxeles */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Estilos del carrusel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px; /* Ajustar el ancho máximo según tus necesidades */
+  height: 450px; /* Agregar una altura fija */
+  margin: 0 auto;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  margin-top: 20px; /* Ajusta el valor según tus necesidades */
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 100%; /* Agregar esta línea */
+  object-fit: cover; /* Agregar esta línea */
+  flex-shrink: 0; /* Cambiar de 1 a 0 */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff; /* Cambiar el color del texto a blanco */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 24px; /* Aumentar el tamaño de fuente para mayor visibilidad */
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/* Estilos de la máquina de escribir */
+.maquina-escribir {
+  font-size: xx-large;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  width: 60ch;
+  animation: escribiendo 30s steps(1000) infinite;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80%;
+  background-color: rgba(255, 255, 255, 0.521);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cursor {
+  animation: parpadeo-cursor 0.9s infinite;
+}
+
+@keyframes escribiendo {
+  0% {
+    width: 0ch;
+  }
+  10% {
+    width: 10ch;
+  }
+  20% {
+    width: 20ch;
+  }
+  30% {
+    width: 30ch;
+  }
+  40% {
+    width: 40ch;
+  }
+  50% {
+    width: 50ch;
+  }
+  60% {
+    width: 60ch;
+  }
+  70% {
+    width: 70ch;
+  }
+  80% {
+    width: 80ch;
+  }
+  90% {
+    width: 90ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes parpadeo-cursor {
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Estilos de la sección de noticias */
+.news-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto; /* Centrar horizontalmente */
+  justify-content: center; /* Alinear los elementos de la cuadrícula horizontalmente */
+}
+
+.news-item {
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.news-item p {
+  font-size: 16px;
+  color: #afaeae;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .hero-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.98);
+  }
+}
+
+/* Estilos para la sección del mapa */
+.map-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto; /* Centrar horizontalmente */
+  max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
