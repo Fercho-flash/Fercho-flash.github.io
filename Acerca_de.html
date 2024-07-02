@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museo de la Revolución Industrial</title>
+  <link rel="stylesheet" href="Style1.css">
+  <style>
+    /* Estilos específicos para esta página */
+    .contenido-extra {
+      display: none;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 315px;
+      max-width: 100%;
+    }
+
+    .mostrar-contenido {
+      display: inline-block;
+      margin-top: 20px;
+      cursor: pointer;
+      color: rgb(8, 8, 8);
+      text-decoration: underline;
+    }
+
+    .centered-heading,
+    .centered-text {
+      text-align: center;
+    }
+
+    /* Estilos para el carrusel */
+
+    .carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 450px; /* Asegura un tamaño máximo para el carrusel */
+  margin: 0 auto; /* Centra el carrusel */
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%; /* Asegura un tamaño máximo para la imagen */
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+  </style>
+</head>
+<body>
+  <header class="parallax">
+    <div class="header-container">
+      <div class="logo">
+        <a href="https://www.rionegro.gub.uy/">
+          <img src="Logo int.png" alt="Inicio" class="header_logo_image">
+        </a>
+      </div>
+      <div class="separator"></div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="Prueba.html">Museo</a>
+            <ul class="dropdown-content">
+              <li><a href="acerca_de.html">Acerca de</a></li>
+              <li><a href="visita.html">Visita</a></li>
+              <li><a href="tienda_del_museo.html">Tienda del Museo</a></li>
+              <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="sala_principal.html">Instalaciones</a>
+            <ul class="dropdown-content">
+              <li><a href="sala_principal.html">Sala Principal</a></li>
+              <li><a href="oficina_central.html">Oficina Central</a></li>
+              <li><a href="centro_de_documentación.html">Centro de Documentación</a></li>
+              <li><a href="departamento_de_laboratorio.html">Departamento de Laboratorio</a></li>
+              <li><a href="sala_de_maquinas.html">Sala de Máquinas</a></li>
+              <li><a href="sala_luis_meyer.html">Sala Luis Mayer</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="presentacion.html">Área Educativa</a>
+            <ul class="dropdown-content">
+              <li><a href="presentacion.html">Presentación</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="Fotografia.html">+</a>
+            <ul class="dropdown-content">
+              <li><a href="Fotografia.html">Fotografía</a></li>
+              <li><a href="Testimonios.html">Testimonios</a></li>
+            </ul>
+          </li>
+          <li><a href="">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="content-container">
+    <section id="acerca_de">
+      <h2 class="centered-heading">Museo de la Revolución Industrial</h2>
+      <div class="hero-image">
+      <img src="Museo-de-la-Revolucion-Industrial-Paisaje-Industrial-Fray-Bentos-1_1067x800.jpeg" alt="Museo de la Revolución Industrial">
+      </div>
+      <div class="section-separator"></div>
+      <h2 class="centered-heading">El Frigorífico Anglo: Patrimonio Histórico de Fray Bentos</h2>
+      <div class="contenido-extra" id="contenidoExtra">
+        <h1 style="display:none;">El Frigorífico Anglo: Patrimonio Histórico de Fray Bentos</h1>
+        <p style="text-align: justify;">
+          Fundada en 1865, esa colosal fábrica de alimentos nacida originalmente como Liebig’s Extract of Meat Company (LEMCO) exportó extracto de carne y corned beef durante más de un siglo a cinco continentes, lo que valió el mote de “la cocina del mundo”. En 1924 se convirtió en el Frigorífico Anglo del Uruguay, y entre 1968 y el cierre acaecido en 1979, fue gestionado por el Estado como Frigorífico Fray Bentos.
+        </p>
+        <p>
+          Hoy, el sitio del Frigorífico Anglo es Patrimonio de la Humanidad por la UNESCO desde 2015, honrando su importancia histórica y cultural. Este legado simboliza la prosperidad y el progreso que una vez trajo a Fray Bentos y a todo Uruguay.
+        </p>
+        <div class="video-container">
+          <html> <head> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Prueba de responsive</title> <style> .video-responsive { height: 0; overflow: hidden; padding-bottom: 56.25%; padding-top: 30px; position: relative; } .video-responsive iframe, .video-responsive object, .video-responsive embed { height: 100%; left: 0; position: absolute; top: 0; width: 100%; } </style> </head> <body> <div > <iframe width="600" height="1000" src="https://www.youtube-nocookie.com/embed/PuOpMEbKe9g?si=sl_Y6KmBeH2AEO4C&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div> </body> <hmtl>
+        </div>
+      </div>
+      <div class="centered-text">
+        <a href="#" class="mostrar-contenido" onclick="mostrarContenido(event, 'contenidoExtra')">Mostrar más</a>
+      </div>
+      <div class="section-separator"></div>
+    </section>
+    <!-- Segunda sección -->
+    <section id="instalaciones">
+      <h2 class="centered-heading">Objetivos de la Entidad</h2>
+      <div class="contenido-extra" id="contenidoExtra2">
+        <h1 style="display:none;">Objetivos de la Entidad</h1>
+        <p style="text-align: justify;">
+          <strong>1. Preservación Histórica</strong><br>
+          <p><li>Conservación, preservación, de los documentos históricos del Frigorífico Anglo y su correcta difusión para futuras generaciones.</li></p>
+          <strong>2. Educación</strong> 
+          <p><li>Promover el conocimiento de la historia industrial, su impacto en la economía y la sociedad uruguaya, ofreciendo programas educativos y público en general.</li></p>
+          <strong>3. Cultural y Turística</strong>
+          <p><li>Fomentar el turismo en Fray Bentos y la región de Río Negro.</li></p>
+          <p><li>Organizar eventos culturales que resalten la herencia del Frigorífico Anglo.</li></p>
+          <p><li>Colaborar con entidades locales, nacionales e internacionales para promover el sitio como destino turístico.</li></p>
+          <strong>4. Investigación</strong>
+          <p><li>Apoyar proyectos de investigación que exploren nuevas perspectivas sobre nuestra institución.</li></p>
+          <strong>5. Comunidad y Desarrollo Local</strong>
+          <p><li>Involucrar la participación comunitaria en la concientización de la conservación y promoción del patrimonio.</li></p>
+          <p><li>Desarrollar iniciativas que beneficien a la comunidad local a través del turismo.</li></p>
+        </p>
+      </div>
+      <div class="centered-text">
+        <a href="#" class="mostrar-contenido" onclick="mostrarContenido(event, 'contenidoExtra2')">Mostrar más</a>
+      </div>
+      <div class="section-separator"></div>
+    </section>
+    <!-- Tercera sección -->
+    <section id="area_educativa">
+      <h2 class="centered-heading">Reconocimientos</h2>
+      <div class="contenido-extra" id="contenidoExtra3">
+        <h1 style="display:none;">Reconocimientos</h1>
+        <p style="text-align: justify;">
+          <p><li>El Ministerio de Educación y Cultura, junto con la Comisión Nacional de Museos, distinguió con el Primer Premio a la Gestión Museística Integral en los años 2004 y 2005.</li></p> 
+          <p><li>El Frigorífico Anglo es Patrimonio de la Humanidad por UNESCO desde 2015 con los criterios (II) y (IV)</li></p>
+        </p>
+        <div class="video-container">
+          <html> <head> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Prueba de responsive</title> <style> .video-responsive { height: 0; overflow: hidden; padding-bottom: 56.25%; padding-top: 30px; position: relative; } .video-responsive iframe, .video-responsive object, .video-responsive embed { height: 100%; left: 0; position: absolute; top: 0; width: 100%; } </style> </head> <body> <div > <iframe width="560" height="315" src="https://www.youtube.com/embed/M9BPOocldQQ?si=c_kiEp4pp2DOcyVC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div> </body> <hmtl>
+        </div>
+      </div>
+      <div class="centered-text">
+        <a href="#" class="mostrar-contenido" onclick="mostrarContenido(event, 'contenidoExtra3')">Mostrar más</a>
+      </div>
+      <div class="section-separator"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Museo de la Revolución Industrial 2024 | Rio Negro, Fray Bentos | Tel: 1935 1833 </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/museoanglo" target="_blank">
+          <img src="facebook.png" alt="Facebook" class="footer-icon">
+        </a>
+        <a href="https://www.instagram.com/museoanglo" target="_blank">
+          <img src="instagram (1).png" alt="Instagram" class="footer-icon">
+        </a>
+        <a href="https://www.twitter.com/museoanglo" target="_blank">
+          <img src="logotipos.png" alt="X" class="footer-icon">
+        </a>
+        <a href="mailto:museo.anglo@rionegro.gub.uy">
+          <img src="nuevo-correo-electronico.png" alt="Email" class="footer-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="Script1.js"></script>
+  <script>
+  function mostrarContenido(event, id) {
+    event.preventDefault();
+    var contenido = document.getElementById(id);
+    if (contenido.style.display === "none" || contenido.style.display === "") {
+      contenido.style.display = "block";
+    } else {
+      contenido.style.display = "none";
+    }
+  }
+  </script>
+</body>
+</html>
