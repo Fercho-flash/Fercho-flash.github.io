@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museo de la Revolución Industrial</title>
+  <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+  <header class="parallax">
+    <div class="header-container">
+      <div class="logo">
+        <img src="Logo int.png" alt="Inicio" class="header_logo_image">
+      </div>
+      <div class="separator"></div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="museo-detalle.html">Museo</a>
+            <ul class="dropdown-content">
+              <li><a href="Acerca_de.html">Acerca de</a></li>
+              <li><a href="visita.html">Visita</a></li>
+              <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#instalaciones">Instalaciones</a>
+            <ul class="dropdown-content">
+              <li><a href="centro_de_documentación.html">Centro de Documentación</a></li>
+              <li><a href="sala_luis_meyer.html">Sala Luis Meyer</a></li>
+              <li><a href="departamento_de_laboratorio.html">Departamento de Laboratorio</a></li>
+              <li><a href="sala_de_maquinas.html">Sala de Máquinas</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#area_educativa">Área Educativa</a>
+            <ul class="dropdown-content">
+              <li><a href="presentacion.html">Presentación</a></li>
+              <li><a href="programa.html">Programa</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#más">+</a>
+            <ul class="dropdown-content">
+              <li><a href="Fotografia.html">Fotografía</a></li>
+              <li><a href="Testimonios.html">Testimonios</a></li>
+            </ul>
+          </li>
+          <li><a href="">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="content-container">
+    <section id="museo" class="hero">
+      <div class="hero-content">
+        <h1>Museo</h1>
+        <p>¡Bienvenido al museo! Estamos encantados de que desees descubrir nuestras impactantes salas de exposición.</p>
+        <a href="museo-detalle.html" class="btn">Conoce más</a>
+      </div>
+      <div class="hero-image">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="centro de documentacion.jpg" alt="Imagen 1">
+            <img src="centro de documentacion 2.jpg" alt="Imagen 2">
+            <img src="Laboratorio.jpg" alt="Imagen 3">
+            <img src="maquina.jpg" alt="Imagen 4">
+            <img src="chimenea.jpeg" alt="Imagen 5">
+            <img src="Museo-de-la-Revolucion-Industrial-Paisaje-Industrial-Fray-Bentos-1_1067x800.jpeg" alt="Imagen 6">
+          </div>
+          <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+          <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-separator"></div>
+
+    <section id="noticias" class="news-section">
+      <h2>Últimas Noticias</h2>
+      <div class="news-grid">
+        <div class="news-item">
+          <div class="embedded-facebook-posts"></div>
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmuseoanglo%2Fposts%2Fpfbid06ZRvpFcVbngNXyGdLLb7EoTuzPameqdFRScty2yPXZ9nU8pLP6XtcXuyR2iUmXwml&show_text=true&width=500&preview=comet_preview" width="500" height="781" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="news-item">
+          <div class="embedded-facebook-posts"></div>
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmuseoanglo%2Fposts%2Fpfbid02eRGJQAq2BbjMjXLRjGqTJ7yafYdUG7N5YwxJWbtS313HX7s6Xnr5i1wZcA8KAMNkl&show_text=true&width=500&preview=comet_preview" width="500" height="787" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="news-item">
+          <div class="embedded-facebook-posts"></div>
+          <iframe src="https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2Fmuseoanglo%2Fvideos%2F1213583396668190%2F&show_text=true&width=560&t=0" width="560" height="431" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+        <div class="news-item">
+          <div class="embedded-facebook-posts"></div>
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmuseoanglo%2Fposts%2Fpfbid0sELBuaar5fUDNciG4vGeGQeqCiHAazzkUMKc3Hv7SX7jSFU6R277A11HQYh2f9B1l&show_text=true&width=500&preview=comet_preview" width="500" height="742" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-separator"></div>
+
+    <section id="mapa" class="map-section">
+      <h2>Ubicación</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.667635216677!2d-58.33451842493727!3d-33.117820680553514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a5528200a0e02b%3A0xb7b0b58c51f4eb1e!2sEx%20Frigor%C3%ADfico%20Anglo%20%7C%20Museo%20de%20la%20Revoluci%C3%B3n%20Industrial!5e0!3m2!1ses!2suy!4v1717608493375!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Museo de la Revolución Industrial 2024 | Rio Negro, Fray Bentos | Tel: 1935 1833 </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/museoanglo" target="_blank">
+          <img src="facebook.png" alt="Facebook" class="footer-icon">
+        </a>
+        <a href="https://www.instagram.com/museoanglo" target="_blank">
+          <img src="instagram (1).png" alt="Instagram" class="footer-icon">
+        </a>
+        <a href="https://www.twitter.com/museoanglo" target="_blank">
+          <img src="logotipos.png" alt="X" class="footer-icon">
+        </a>
+        <a href="mailto:museo.anglo@rionegro.gub.uy">
+          <img src="nuevo-correo-electronico.png" alt="Email" class="footer-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
