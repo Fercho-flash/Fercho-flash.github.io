@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museo de la Revolución Industrial</title>
+  <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+  <header class="parallax">
+    <div class="header-container">
+      <div class="logo">
+        <a href="https://www.rionegro.gub.uy/">
+          <img src="Logo int.png" alt="Inicio" class="header_logo_image">
+        </a>
+      </div>
+      <div class="separator"></div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="Acerca_de.html">Museo</a>
+            <ul class="dropdown-content">
+              <li><a href="acerca_de.html">Acerca de</a></li>
+              <li><a href="visita.html">Visita</a></li>
+              <li><a href="tienda_del_museo.html">Tienda del Museo</a></li>
+              <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="sala_principal.html">Instalaciones</a>
+            <ul class="dropdown-content">
+              <li><a href="#sala_principal">Sala Principal</a></li>
+              <li><a href="#oficina_central">Oficina Central</a></li>
+              <li><a href="centro_de_documentación.html">Centro de Documentación</a></li>
+              <li><a href="departamento_de_laboratorio.html">Departamento de Laboratorio</a></li>
+              <li><a href="sala_de_maquinas.html">Sala de Máquinas</a></li>             
+              <li><a href="sala_luis_meyer.html">Sala Luis Mayer</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="presentacion.html">Área Educativa</a>
+            <ul class="dropdown-content">
+              <li><a href="presentacion.html">Presentación</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="Fotografia.html">+</a>
+            <ul class="dropdown-content">
+              <li><a href="Fotografia.html">Fotografía</a></li>
+              <li><a href="Testimonios.html">Testimonios</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#noticias">Noticias</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="content-container">
+    <section id="centro_de_documentacion" class="about-section">
+      <h1>Centro de Documentación</h1>
+      <p>El Centro de Documentación del Museo de la Revolución Industrial ofrece una extensa colección de documentos históricos, fotografías, y archivos que documentan la historia de la Revolución Industrial y su impacto en la región de Fray Bentos y más allá. Nuestro objetivo es preservar y poner a disposición del público y los investigadores este valioso patrimonio documental.</p>
+      <div class="carousel" id="carousel1">
+        <div class="carousel-images">
+          <img src="centro de documentacion 2.jpg" alt="Imagen 1">
+          <img src="centro de documentacion 3.jpg" alt="Imagen 2">
+          <img src="centro de documentacion 4.jpg" alt="Imagen 3">
+          <img src="centro de documentacion 5.jpg" alt="Imagen 4">
+          <img src="Centro de documentacion 1.jpg" alt="Imagen 5">
+          <img src="centro de documentacion.jpg" alt="Imagen 6">
+        </div>
+        <button class="carousel-button prev" onclick="prevSlide('carousel1')">&#10094;</button>
+        <button class="carousel-button next" onclick="nextSlide('carousel1')">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="laboratorio" class="about-section">
+      <h1>Laboratorio</h1>
+      <p>El Laboratorio del Museo ofrece una visión detallada de los avances tecnológicos y científicos de la época.</p>
+      <div class="carousel" id="carousel2">
+        <div class="carousel-images">
+          <img src="Laboratorio.jpg" alt="Imagen 1">
+          <img src="laboratorio 2.jpg" alt="Imagen 2">
+          <img src="laboratorio 3.jpg" alt="Imagen 3">
+          <img src="laboratorio 4.jpg" alt="Imagen 4">
+        </div>
+        <button class="carousel-button prev" onclick="prevSlide('carousel2')">&#10094;</button>
+        <button class="carousel-button next" onclick="nextSlide('carousel2')">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="maquinas" class="about-section">
+      <h1>Sala de Máquinas</h1>
+      <p>La Sala de Máquinas presenta una colección de maquinaria industrial utilizada durante la Revolución Industrial.</p>
+      <div class="carousel" id="carousel3">
+        <div class="carousel-images">
+          <img src="sala de maquinas 1.jpg" alt="Imagen 1">
+          <img src="sala de maquinas 2.jpg" alt="Imagen 2">
+          <img src="sala de maquinas 3.jpg" alt="Imagen 3">
+          <img src="sala de maquinas 4.jpg" alt="Imagen 4">
+          <img src="sala de maquinas 5.jpg" alt="Imagen 5">
+          <img src="sala de maquinas 6.jpg" alt="Imagen 6">
+          <img src="sala de maquinas 7.jpg" alt="Imagen 7">
+        </div>
+        <button class="carousel-button prev" onclick="prevSlide('carousel3')">&#10094;</button>
+        <button class="carousel-button next" onclick="nextSlide('carousel3')">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="laboratorio" class="about-section">
+      <h1>Oficina Central</h1>
+      <p>escribir algo aqui ver</p>
+      <div class="carousel" id="carousel2">
+        <div class="carousel-images">
+          <img src="Oficina central.jpg" alt="Imagen 1">
+          <img src="Oficina central 2.jpg" alt="Imagen 2">
+          <img src="oficina central 3.jpg" alt="Imagen 3">
+          <img src="oficina central 4.jpg" alt="Imagen 4">
+          <img src="oficina central 5.jpg" alt="Imagen 5">
+          <img src="oficina central 6.jpg" alt="Imagen 6">
+        </div>
+        <button class="carousel-button prev" onclick="prevSlide('carousel2')">&#10094;</button>
+        <button class="carousel-button next" onclick="nextSlide('carousel2')">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="laboratorio" class="about-section">
+      <h1>Sala Luis Mayer</h1>
+      <p>Aqui encontraras fotos actuales sobre dicha sala</p>
+      <div class="carousel" id="carousel2">
+        <div class="carousel-images">
+          <img src="Casa grande 1.jpg" alt="Imagen 1">
+          <img src="Casa grande 2.jpg" alt="Imagen 2">
+          <img src="Casa grande 3.jpg" alt="Imagen 3">
+          <img src="Casa grande 4.jpg" alt="Imagen 4">
+          <img src="Casa grande 5.jpg" alt="Imagen 5">
+          <img src="Casa grande 6.jpg" alt="Imagen 6">
+        </div>
+        <button class="carousel-button prev" onclick="prevSlide('carousel2')">&#10094;</button>
+        <button class="carousel-button next" onclick="nextSlide('carousel2')">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="laboratorio" class="about-section">
+    <h1>Sala Principal</h1>
+    <p>escribir algo aqui ver</p>
+      <div class="carousel" id="carousel2">
+        <div class="carousel-images">
+          <img src="sala central 2.jpg" alt="Imagen 1">
+          <img src="sala central 3.jpg" alt="Imagen 2">
+          <img src="sala central 4.jpg" alt="Imagen 3">
+          <img src="sala central.jpg" alt="Imagen 4">
+          <img src="Museo-de-la-Revolucion-Industrial-Paisaje-Industrial-Fray-Bentos-1_1067x800.jpeg" alt="Imagen 5">
+        </div>
+        <button class="carousel-button prev" onclick="prevSlide('carousel2')">&#10094;</button>
+        <button class="carousel-button next" onclick="nextSlide('carousel2')">&#10095;</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Museo de la Revolución Industrial 2024 | Rio Negro, Fray Bentos | Tel: 1935 1833 </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/museoanglo" target="_blank">
+          <img src="facebook.png" alt="Facebook" class="footer-icon">
+        </a>
+        <a href="https://www.instagram.com/museoanglo" target="_blank">
+          <img src="instagram (1).png" alt="Instagram" class="footer-icon">
+        </a>
+        <a href="https://www.twitter.com/museoanglo" target="_blank">
+          <img src="logotipos.png" alt="X" class="footer-icon">
+        </a>
+        <a href="mailto:museo.anglo@rionegro.gub.uy">
+          <img src="nuevo-correo-electronico.png" alt="Email" class="footer-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
