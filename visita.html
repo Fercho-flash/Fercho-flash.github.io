@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museo de la Revolución Industrial</title>
+  <link rel="stylesheet" href="Style1.css">
+  <style>
+    /* Estilos específicos para esta página */
+    .contenido-extra {
+      display: none;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    .content-container {
+      max-width: 700px; /* Ajusta el ancho máximo según tus necesidades */
+      margin: 0 auto; /* Centra horizontalmente el contenedor */
+    }
+
+    .mostrar-contenido {
+      display: inline-block;
+      margin-top: 20px;
+      cursor: pointer;
+      color: rgb(8, 8, 8);
+      text-decoration: underline;
+    }
+
+    .centered-heading,
+    .centered-text {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="parallax">
+    <div class="header-container">
+      <div class="logo">
+        <a href="https://www.rionegro.gub.uy/">
+          <img src="Logo int.png" alt="Inicio" class="header_logo_image">
+        </a>
+      </div>
+      <div class="separator"></div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="Prueba.html">Museo</a>
+            <ul class="dropdown-content">
+              <li><a href="acerca_de.html">Acerca de</a></li>
+              <li><a href="visita.html">Visita</a></li>
+              <li><a href="tienda_del_museo.html">Tienda del Museo</a></li>
+              <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="sala_principal.html">Instalaciones</a>
+            <ul class="dropdown-content">
+              <li><a href="sala_principal.html">Sala Principal</a></li>
+              <li><a href="oficina_central.html">Oficina Central</a></li>
+              <li><a href="centro_de_documentación.html">Centro de Documentación</a></li>
+              <li><a href="departamento_de_laboratorio.html">Departamento de Laboratorio</a></li>
+              <li><a href="sala_de_maquinas.html">Sala de Máquinas</a></li>             
+              <li><a href="sala_luis_meyer.html">Sala Usinas Electricas</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="presentacion.html">Área Educativa</a>
+            <ul class="dropdown-content">
+              <li><a href="presentacion.html">Presentación</a></li>
+              <li><a href="programa.html">Programa</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="Fotografia.html">+</a>
+            <ul class="dropdown-content">
+              <li><a href="Fotografia.html">Fotografía</a></li>
+              <li><a href="Testimonios.html">Testimonios</a></li>
+            </ul>
+          </li>
+          <li><a href="" >Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="content-container">
+    <section id="acerca_de">
+      <h2 class="centered-heading">Visitas al Museo de la Revolución Industrial</h2>
+      <html> <head> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Prueba de responsive</title> <style> .video-responsive { height: 0; overflow: hidden; padding-bottom: 56.25%; padding-top: 30px; position: relative; } .video-responsive iframe, .video-responsive object, .video-responsive embed { height: 100%; left: 0; position: absolute; top: 0; width: 100%; } </style> </head> <body> <div > <iframe width="700" height="400" src="https://www.youtube-nocookie.com/embed/Mp8-V6UKQpg?si=vHVKbi7LQWjqYWBr&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div> </body> <hmtl>
+      <div class="section-separator"></div>
+      <h2 class="centered-heading">Ubicación</h2>
+      <div class="contenido-extra" id="contenidoExtra">
+        <h1 style="display:none;">Ubicación</h1>
+        <p style="text-align: justify;">
+        <p><li>Rambla Dr. Andrés Montaño, Portón 2, Barrio Anglo, Fray Bentos, Departamento de Río Negro, Uruguay</li></p>
+        </div>
+      </div>
+      <div class="centered-text">
+        <a href="#" class="mostrar-contenido" onclick="mostrarContenido(event, 'contenidoExtra')">Mostrar más</a>
+      </div>
+      <div class="section-separator"></div>
+    </section>
+<!-- Segunda sección -->
+<section id="instalaciones">
+  <h2 class="centered-heading">Recorridos</h2>
+  <div class="contenido-extra" id="contenidoExtra2">
+    <h1 style="display:none;">Recorridos, Horarios, Dias y Costo</h1>  
+    <p class="centered-image"></p>
+    <strong>Salas de Exposición</strong>
+    <p><li>Costo: 50$.</li></p>
+    <p><li>Horario: 9:30 am. - 17:00 pm</li></p>
+    <P><li>Martes a Domingo.</li></P>
+    <strong>Planta Fabril (Visita Guiada)</strong>
+    <p><li>Costo: 150$ | Duración: 1 h 30 min</li></p>
+    <p><li>Horario: Doble 10:00 am | 15:00 pm</li></p>
+    <p><li>Todos los días que esté abierto el Museo </li></p>
+    <p><li>Grupo mayores a 15 personas previa coordinación Tel. 1935 1833</li></p>
+    <strong>Sala Luis Meyer (Visita Guiada)</strong>
+    <p><li>Sin Costo</li></p>
+    <p><li>Horarios: 12:00 pm - 14:00 pm</li></p>  
+    <p><li>Sábados - Domingos - Feriados</li></p> 
+    <strong>Acceso del Ganado (Visita Guiada)</strong>
+    <p><li>Costo: 200$ | Duración: 2 hs</li></p>
+    <p><li>Horario: 10:00 am</li></p>
+    <p><li>Coordinación previa 24 hs antes tel. 1935 1833</li></p>
+    <p><li>Importante: caminata total 2 km (ida y vuelta) se recomienda llevar calzado comómodo</li></p>
+    <strong>Barrio Obrero y Fabrica (Visita Guiada en Bicicleta)</strong>
+    <p><li>Costo: 150$ | Duración: 2 hs</li></p>
+    <p><li>Coordinar día y horario tel. 1935 1833</li></p>
+    <p><li>Agenda previa de 2 días.</li></p>
+    <p><li>El museo proporciona bicicletas, cascos y chalecos reflectivos</li></p>
+
+  </div>
+  <div class="centered-text">
+    <a href="#" class="mostrar-contenido" onclick="mostrarContenido(event, 'contenidoExtra2')">Mostrar más</a>
+  </div>
+  <div class="section-separator"></div>
+</section>
+
+<style>
+  .centered-heading {
+    text-align: center;
+  }
+  .centered-image {
+    text-align: center;
+  }
+  .centered-image img {
+    display: inline-block;
+  }
+  .centered-text {
+    text-align: center;
+  }
+</style>
+
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Museo de la Revolución Industrial 2024 | Rio Negro, Fray Bentos | Tel: 1935 1833 </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/museoanglo" target="_blank">
+          <img src="facebook.png" alt="Facebook" class="footer-icon">
+        </a>
+        <a href="https://www.instagram.com/museoanglo" target="_blank">
+          <img src="instagram (1).png" alt="Instagram" class="footer-icon">
+        </a>
+        <a href="https://www.twitter.com/museoanglo" target="_blank">
+          <img src="logotipos.png" alt="X" class="footer-icon">
+        </a>
+        <a href="mailto:museo.anglo@rionegro.gub.uy">
+          <img src="nuevo-correo-electronico.png" alt="Email" class="footer-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="Script1.js"></script>
+  <script>
+    function mostrarContenido(event, id) {
+      event.preventDefault();
+      var contenido = document.getElementById(id);
+      if (contenido.style.display === "none" || contenido.style.display === "") {
+        contenido.style.display = "block";
+      } else {
+        contenido.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
